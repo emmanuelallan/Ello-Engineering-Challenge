@@ -21,7 +21,7 @@ I have successfully implemented the required frontend for the challenge and inte
 
 ## Screenshot
 
-![alt text](https://github.com/emmanuelallan/Ello-Engineering-Challenge/blob/main/ui.png?raw=true)
+![alt text](https://github.com/emmanuelallan/Ello-Engineering-Challenge/blob/main/frontend/public/ui.png)
 
 ### Frontend Setup
 
