@@ -1,5 +1,5 @@
 import { Snackbar } from "@mui/joy";
-import { NotificationMessage } from '../types.ts'
+import { NotificationMessage } from '../types'
 
 interface ToastProps {
     notification: NotificationMessage | null;

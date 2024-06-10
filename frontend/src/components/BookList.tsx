@@ -1,10 +1,10 @@
 import {FC, useEffect, useState} from 'react';
-import Header from "./Header.tsx";
+import Header from "./Header";
 import SearchBar from './SearchBar';
-import ReadingList from '../../../../../fullstack-take-home-test/frontend/src/components/ReadingList';
+import ReadingList from './ReadingList';
 import { Container } from '@mui/joy';
-import Toast from "./Toast.tsx";
-import { NotificationMessage } from '../types.ts'
+import Toast from "./Toast";
+import { NotificationMessage } from '../types'
 
 interface Book {
     title: string;

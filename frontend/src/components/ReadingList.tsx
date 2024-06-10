@@ -12,7 +12,7 @@ import {
 } from '@mui/joy';
 import {keyframes} from "@emotion/react";
 import { LocalLibraryOutlined, DeleteForeverOutlined } from "@mui/icons-material";
-import { Book } from '../types.ts'
+import { Book } from '../types'
 
 interface ReadingListProps {
     books: Book[];
@@ -48,7 +48,7 @@ const ReadingList: FC<ReadingListProps> = ({ books, onRemove }) => {
                     </Typography>
                 </Box>
             ) : (
-                <Grid container spacing={3} columns={{ xs: 4, sm: 8, md: 12 }} sx={{justifyContent: "center"}}>
+                <Grid container spacing={3} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {books.map((book) => (
                         <Grid key={book.title} xs={2.4} sm={2.4} md={2.4}>
                             <Card

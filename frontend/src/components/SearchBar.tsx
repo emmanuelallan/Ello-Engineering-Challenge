@@ -1,6 +1,6 @@
 import {FC, useState} from 'react';
 import {Autocomplete, Box, Button, AutocompleteOption, Typography} from '@mui/joy';
-import { Book, NotificationMessage } from '../types.ts'
+import { Book, NotificationMessage } from '../types'
 
 interface SearchBarProps {
     books: Book[];
@@ -24,10 +24,10 @@ const SearchBar: FC<SearchBarProps> = ({ books, onAddToReadingList, setNotificat
         <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: '20px', marginBottom: "100px", flexDirection: 'column', alignItems: 'center' }}>
             <Autocomplete
                 options={books}
-                getOptionLabel={(option) => `${option.title} by ${option.author}`}
+                getOptionLabel={(option: Book) => `${option.title} by ${option.author}`}
                 value={selectedBook}
-                onChange={(_event, newValue) => setSelectedBook(newValue)}
-                renderOption={(props, option) => (
+                onChange={(_event, newValue: Book) => setSelectedBook(newValue)}
+                renderOption={(props, option: Book) => (
                     <AutocompleteOption {...props}>
                         <Box sx={{ display: 'flex', alignItems: 'center' }}>
                             <img src={`/${option.coverPhotoURL}`} alt={option.title} width="50" style={{ marginRight: 10 }} />
